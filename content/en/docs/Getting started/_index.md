@@ -3,33 +3,34 @@ title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 2
 description: >
-  What does your user need to know to try your project?
+  FreeBSD&trade; 12.2-RELEASE Installation
 ---
-
+<!--
 {{% pageinfo %}}
 This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
+-->
 
-Information in this section helps your user try your project themselves.
+Installing FreeBSD&trade; 12.2-RELEASE is very easy, first thing we should do is to know where to install
+the FreeBSD&trade; whether to install it on a virtual machine or a bare metal.
 
-* What do your users need to do to start using your project? This could include downloading/installation instructions, including any prerequisites or system requirements.
+## Installing FreeBSD&trade; on a virtual machine
 
-* Introductory “Hello World” example, if appropriate. More complex tutorials should live in the Tutorials section.
+You can use Oracle&trade; VM VirtualBox&trade;, VMware&reg; Workstation Player, Xen or KVM depends on your current OS, since I run everything on FreeBSD&trade; I will be using bhyve to show you how to install FreeBSD&trade;.
 
-Consider using the headings below for your getting started page. You can delete any that are not applicable to your project.
+## Installing FreeBSD&trade; on a bare metal
 
-## Prerequisites
+First visit [FreeBSD&trade; website](https://www.freebsd.org/where/) and download FreeBSD&trade; image and burn it to the media associated with its file type and size (CD, DVD, or USB), if you are using Windows&reg; download Rufus and if you are using Linux&reg; or Mac OS&reg; open your terminal and use dd command.
 
-Are there any system requirements for using your project? What languages are supported (if any)? Do users need to already have any software or tools installed?
+{{% alert title="Warning" color="warning" %}}
+There is no undo with dd command, make sure to replace *of=/dev/da0* with the right device.
+{{% /alert %}}
 
-## Installation
+```html
+# dd if=FreeBSD-12.2-RELEASE-amd64-memstick.img of=/dev/da0 bs=1M conv=fdatasync status=progress
+```
 
-Where can your user find your project code? How can they install it (binaries, installable package, build from source)? Are there multiple options/versions they can install and how should they choose the right one for them?
+Boot the system to install from the inserted media.
 
-## Setup
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NcJWygUjlcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-Is there any initial setup users need to do after installation to try your project?
-
-## Try it out!
-
-Can your users test their installation, for example by running a command or deploying a Hello World example?
