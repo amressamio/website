@@ -3,7 +3,7 @@ title: "Getting Started"
 linkTitle: "Getting Started"
 weight: 2
 description: >
-  FreeBSD&trade; 12.2-RELEASE Installation
+  FreeBSD&trade; 13.0-RELEASE Installation
 ---
 <!--
 {{% pageinfo %}}
@@ -11,7 +11,7 @@ This is a placeholder page that shows you how to use this template site.
 {{% /pageinfo %}}
 -->
 
-Installing FreeBSD&trade; 12.2-RELEASE is very easy, first thing we should do is to know where to install
+Installing FreeBSD&trade; 13.0-RELEASE is very easy, first thing we should do is to know where to install
 the FreeBSD&trade; whether to install it on a virtual machine or a bare metal.
 
 ## Installing FreeBSD&trade; on a virtual machine
