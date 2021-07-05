@@ -20,7 +20,7 @@ You can use Oracle&trade; VM VirtualBox&trade;, VMware&reg; Workstation Player, 
 
 ## Installing FreeBSD&trade; on a bare metal
 
-First visit [FreeBSD&trade; website](https://www.freebsd.org/where/) and download FreeBSD&trade; image and burn it to the media associated with its file type and size (CD, DVD, or USB), if you are using Windows&reg; download Rufus and if you are using Linux&reg; or Mac OS&reg; open your terminal and use dd command.
+First visit [FreeBSD&trade; website](https://www.freebsd.org/where/) and download FreeBSD&trade; image and burn it to the media associated with its file type and size (CD, DVD, or USB), if you are using Windows&reg; download [Rufus] (https://rufus.ie) and if you are using Linux&reg; or Mac OS&reg; open your terminal and use dd command.
 
 {{% alert title="Warning" color="warning" %}}
 There is no undo with dd command, make sure to replace *of=/dev/da0* with the right device.
