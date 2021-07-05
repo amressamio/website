@@ -209,5 +209,5 @@ enable = false
  #       desc = "Discuss development issues around the project"
 # Add your release versions here
 [[params.versions]]
-  version = "12.2"
-  url = "/docs"
+  version = "FreeBSD 13.0"
+  url = "/docs/13.0"
