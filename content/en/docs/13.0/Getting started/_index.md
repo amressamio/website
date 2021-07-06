@@ -12,15 +12,15 @@ This is a placeholder page that shows you how to use this template site.
 -->
 
 Installing FreeBSD&trade; 13.0-RELEASE is very easy, first thing we should do is to know where to install
-the FreeBSD&trade; whether to install it on a virtual machine or a bare metal.
+the FreeBSD&trade; OS, whether to install it on a virtual machine or a bare metal.
 
 ## Installing FreeBSD&trade; on a virtual machine
 
-You can use Oracle&trade; VM VirtualBox&trade;, VMware&reg; Workstation Player, Xen or KVM depends on your current OS, since I run everything on FreeBSD&trade; I will be using bhyve to show you how to install FreeBSD&trade;.
+You can use Oracle&trade; VM VirtualBox&trade;, VMware&reg; Workstation Player, Xen or KVM depends on your current OS, since I run everything on FreeBSD&trade; I will be using bhyve, the "BSD hypervisor" and [CBSD](https://cbsd.io) to show you how to install FreeBSD&trade;.
 
 ## Installing FreeBSD&trade; on a bare metal
 
-First visit [FreeBSD&trade; website](https://www.freebsd.org/where/) and download FreeBSD&trade; image and burn it to the media associated with its file type and size (CD, DVD, or USB), if you are using Windows&reg; download [Rufus] (https://rufus.ie) and if you are using Linux&reg; or Mac OS&reg; open your terminal and use dd command.
+First visit [FreeBSD&trade; website](https://www.freebsd.org/where/) and download FreeBSD&trade; image and burn it to the media associated with its file type and size (CD, DVD, or USB), if you are using Windows&reg; download [Rufus](https://rufus.ie) and if you are using Linux&reg; or Mac OS&reg; open your terminal and use dd command like the following example.
 
 {{% alert title="Warning" color="warning" %}}
 There is no undo with dd command, make sure to replace *of=/dev/da0* with the right device.
