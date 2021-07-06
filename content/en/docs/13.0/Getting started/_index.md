@@ -27,10 +27,10 @@ There is no undo with dd command, make sure to replace *of=/dev/da0* with the ri
 {{% /alert %}}
 
 ```html
-# dd if=FreeBSD-12.2-RELEASE-amd64-memstick.img of=/dev/da0 bs=1M conv=fdatasync status=progress
+# dd if=FreeBSD-13.0-RELEASE-amd64-memstick.img of=/dev/da0 bs=1M conv=fdatasync status=progress
 ```
 
 Boot the system to install from the inserted media.
-
+<!--
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NcJWygUjlcI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+-->
