@@ -131,25 +131,22 @@ zone:
 ```html
 $ORIGIN amressam.io.
 $TTL 3600
-@       IN      SOA     pns.amressam.io.     amr.amressam.io.     (
+@       IN      SOA     pns.amressam.io.     amr.amressam.io. (
                         20111111        ; Serial
                         3600            ; Refresh
                         600             ; Retry
                         86400           ; Expire
-                        600 )           ; Negative Cache TTL
+                        600             ; Negative Cache TTL
+                        )
 
         IN      NS      pns.amressam.io.
         MX      10      pmx.amressam.io.
         IN      TXT     "v=spf1 a mx -all"
 
-dkim._domainkey.amressam.io.         IN      TXT     ("v=DKIM1;k=rsa;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6J6hlf8NJOPWy2trVRPg6SaiUtseQPlc3CcyiCRNIEl0gFAsDGIWu25hlMjOSk7DLSlzz9jU"
-"pr24HSix8cLcbZW3LZbk6CXaJB8WEPEjVrLWHvLIf4zdaBSWt5acx9EgkRBlynyk0pQ9+qa+khBkPdwtfImjf+yZq0n69x6LOw/pgH96c1zOquOblzylfMAHFCEyEa0YqCx8pBppNkJQ7JUxzR0Sy95Ds3PfUIYom68vuYDD8Cv0kbL5hnJcjfXU+x02R")
-_dmarc.amressam.io.                  IN      TXT     "v=DMARC1;p=reject;pct=100;rua=mailto:amr@amressam.io;"
-_acme-challenge.amressam.io.         IN      TXT     "RAhdVu9Sji11fB-QxATQW4FtIh3-hahMY2h-CSXim0o"
 
 @       IN      A       192.168.100.100
 pns     IN      A       192.168.100.100
-pmx     IN      A       192.168.100.150
+pmx     IN      A       192.168.100.100
 ```
 
 ### Start NSD
